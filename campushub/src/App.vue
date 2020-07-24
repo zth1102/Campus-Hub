@@ -28,30 +28,35 @@
                 default-active="1"
                 class="el-menu-vertical-demo"
                 @open="handleOpen"
-                @close="handleClose">
-        <el-menu-item index="1" @click="homeclick">
+                @close="handleClose"
+                :router="true">
+        <el-menu-item index="home" >
           <i class="el-icon-menu" style="font-size: 22px; margin-left: 60px;"></i>
-          <span slot="title" style="font-size: 22px; margin-left:20px;">首 页</span>
+          <span slot="title" style="font-size: 22px; margin-left:20px;">首页</span>
         </el-menu-item>
-        <el-menu-item index="2" @click="loginclick">
+        <el-menu-item index="login">
           <i class="el-icon-circle-check" style="font-size: 22px; margin-left: 60px;"></i>
-          <span slot="title" style="font-size: 22px; margin-left:20px;">登 录</span>
+          <span slot="title" style="font-size: 22px; margin-left:20px;">登录</span>
         </el-menu-item>
-        <el-menu-item index="3" @click="registerclick">
+        <el-menu-item index="register">
           <i class="el-icon-remove" style="font-size: 22px; margin-left: 60px;"></i>
-          <span slot="title" style="font-size: 22px; margin-left:20px;">注 册</span>
+          <span slot="title" style="font-size: 22px; margin-left:20px;">注册</span>
         </el-menu-item>
-        <el-menu-item index="4"  @click="discoverclick">
+        <el-menu-item index="discover">
           <i class="el-icon-star-off" style="font-size: 22px; margin-left: 60px;"></i>
-          <span slot="title" style="font-size: 22px; margin-left:20px;">发 现</span>
+          <span slot="title" style="font-size: 22px; margin-left:20px;">发现</span>
         </el-menu-item>
         <el-menu-item index="5">
           <i class="el-icon-bell" style="font-size: 22px; margin-left: 60px;"></i>
-          <span slot="title" style="font-size: 22px; margin-left:20px;">代 取 服 务</span>
+          <span slot="title" style="font-size: 22px; margin-left:20px;">代取服务</span>
         </el-menu-item>
-          <el-menu-item index="6" @click="recommendclick">
+          <el-menu-item index="recommend">
             <i class="el-icon-tickets" style="font-size: 22px; margin-left: 60px;"></i>
-            <span slot="title" style="font-size: 22px; margin-left:20px;">好 物 推 荐</span>
+            <span slot="title" style="font-size: 22px; margin-left:20px;">好物推荐</span>
+          </el-menu-item>
+          <el-menu-item index="write">
+            <i class="el-icon-tickets" style="font-size: 22px; margin-left: 60px;"></i>
+            <span slot="title" style="font-size: 22px; margin-left:20px;">发表文章</span>
           </el-menu-item>
       </el-menu>
       </el-col>

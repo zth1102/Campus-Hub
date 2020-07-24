@@ -5,6 +5,7 @@ import Information from "../views/Information";
 import Home from "../views/Home";
 import Recommend from "../views/Recommend";
 import Discover from "../views/Discover";
+import Write from "../views/Write";
 
 Vue.use(VueRouter)
 
@@ -39,6 +40,11 @@ const routes = [
     path: '/recommend',
     name: 'Recommend',
     component: Recommend
+  },
+  {
+    path: '/write',
+    name: 'Write',
+    component: Write
   },
   {
     path: '/register',
